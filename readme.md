@@ -1,2 +1,2 @@
-# Framingo skeleton projject
+# Framingo skeleton project
 
