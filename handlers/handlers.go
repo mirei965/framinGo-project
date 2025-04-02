@@ -9,7 +9,7 @@ import (
 )
 
 type Handlers struct {
-	App    *framinGo.Framingo
+	App    *framinGo.FraminGo
 	Models *data.Models
 }
 

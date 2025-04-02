@@ -41,7 +41,7 @@ func InitApplication() *application {
 	app.App.Routes = app.routes()
 
 	app.Models = data.New(app.App.DB.Pool)
-	myHandlers.Models = *app.Models
+	myHandlers.Models = app.Models
 	app.Middleware.Models = *app.Models
 
 	return app
