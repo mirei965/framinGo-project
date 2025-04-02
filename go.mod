@@ -23,6 +23,7 @@ require (
 	github.com/jackc/pgx/v4 v4.18.3
 	github.com/joho/godotenv v1.5.1
 	github.com/justinas/nosurf v1.1.1
+	github.com/mirei965/framinGo v0.0.0-20250402160622-860a5db89930
 	github.com/ory/dockertest/v3 v3.11.0
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/vanng822/go-premailer v1.24.0
