@@ -1,0 +1,2 @@
+# Framingo skeleton projject
+
