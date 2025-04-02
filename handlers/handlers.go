@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/CloudyKit/jet/v6"
 	"github.com/mirei965/framingo"
 )
 
