@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/mirei965/framingo"
+	"github.com/mirei965/framinGo"
 )
 
 func (h *Handlers) render(w http.ResponseWriter, r *http.Request, tmpl string, variables, data interface{}) error {
@@ -40,7 +40,7 @@ func (h *Handlers) randomString(n int) string {
 }
 
 func (h *Handlers) encrypt(text string) (string, error) {
-	enc := framingo.Encryption{Key: []byte(h.App.Encryption)}
+	enc := framinGo.Encryption{Key: []byte(h.App.Encryption)}
 
 	encrypted, err := enc.Encrypt(text)
 	if err != nil {
@@ -50,7 +50,7 @@ func (h *Handlers) encrypt(text string) (string, error) {
 }
 
 func (h *Handlers) decrypt(crypto string) (string, error) {
-	enc := framingo.Encryption{Key: []byte(h.App.Encryption)}
+	enc := framinGo.Encryption{Key: []byte(h.App.Encryption)}
 
 	decrypted, err := enc.Decrypt(crypto)
 	if err != nil {

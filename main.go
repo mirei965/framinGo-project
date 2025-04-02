@@ -4,13 +4,14 @@ import (
 	"myapp/data"
 	"myapp/handlers"
 	"myapp/middleware"
-	"github.com/mirei965/framingo"
+
+	"github.com/mirei965/framinGo"
 )
 
 type application struct {
-	App *framingo.Framingo
-	Handlers *handlers.Handlers
-	Models *data.Models
+	App        *framinGo.FraminGo
+	Handlers   *handlers.Handlers
+	Models     *data.Models
 	Middleware *middleware.Middleware
 }
 

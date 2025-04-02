@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/mirei965/framingo"
+	"github.com/mirei965/framinGo"
 )
 
 type Handlers struct {
-	App    *framingo.Framingo
-	Models data.Models
+	App    *framinGo.Framingo
+	Models *data.Models
 }
 
 //const
@@ -22,4 +22,3 @@ func (h *Handlers) Home(w http.ResponseWriter, r *http.Request) {
 		h.App.ErrorLog.Println("error rendering:", err)
 	}
 }
-

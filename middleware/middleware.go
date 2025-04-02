@@ -2,11 +2,11 @@ package middleware
 
 import (
 	"myapp/data"
-	"github.com/mirei965/framingo"
+
+	"github.com/mirei965/framinGo"
 )
 
 type Middleware struct {
-	App *framingo.Framingo
+	App    *framinGo.FraminGo
 	Models data.Models
 }
-

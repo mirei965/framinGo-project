@@ -1,15 +1,15 @@
-BINARY_NAME=framingo
+BINARY_NAME=framinGo
 
 build:
 	@go mod vendor
-	@echo "Building Framingo..."
+	@echo "Building FraminGo..."
 	@go build -o tmp/${BINARY_NAME} .
-	@echo "Framingo built!"
+	@echo "FraminGo built!"
 
 run: build
-	@echo "Starting Framingo..."
+	@echo "Starting FraminGo..."
 	@./tmp/${BINARY_NAME} &
-	@echo "Framingo started!"
+	@echo "FraminGo started!"
 
 clean:
 	@echo "Cleaning..."
@@ -31,8 +31,8 @@ test:
 start: run
 
 stop:
-	@echo "Stopping Framingo..."
+	@echo "Stopping FraminGo..."
 	@-pkill -SIGTERM -f "./tmp/${BINARY_NAME}"
-	@echo "Stopped Framingo!"
+	@echo "Stopped FraminGo!"
 
 restart: stop start

@@ -7,7 +7,7 @@ import (
 	"myapp/middleware"
 	"os"
 
-	"github.com/mirei965/framingo"
+	"github.com/mirei965/framinGo"
 )
 
 func InitApplication() *application {
@@ -17,7 +17,7 @@ func InitApplication() *application {
 	}
 
 	//init framingo
-	fra := &framingo.Framingo{}
+	fra := &framinGo.FraminGo{}
 	err = fra.New(path)
 	if err != nil {
 		log.Fatal(err)
@@ -30,12 +30,12 @@ func InitApplication() *application {
 	}
 
 	myHandlers := &handlers.Handlers{
-		App: fra,	
+		App: fra,
 	}
 
 	app := &application{
 		App:        fra,
-		Handlers: myHandlers,
+		Handlers:   myHandlers,
 		Middleware: myMiddleware,
 	}
 	app.App.Routes = app.routes()

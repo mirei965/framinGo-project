@@ -1,4 +1,4 @@
-BINARY_NAME=FramingoApp.exe
+BINARY_NAME=FraminGoApp.exe
 
 ## build: builds all binaries
 build:
